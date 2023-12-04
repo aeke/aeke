@@ -2,6 +2,7 @@
 <br />
 <h1 align="center">Hi, I'm Abdullah EKE  👋</h1>
 <h3 align="center">Self-Employed | Full-Stack Developer based in Turkey </h3> 
+<p>Hello! I'm a dedicated Full-Stack Developer with many years of experience in building scalable, efficient, and user-friendly web applications. My journey in the tech world has been marked by a continuous quest for learning and innovation, honing my skills in a wide range of technologies and frameworks.</p>
 <hr/>
 
 ### TECH STACK
