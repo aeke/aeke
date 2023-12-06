@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/abeke/image/upload/v1701858051/custom/ezgif-1-ed63983eaf.gif" alt="Abdullah EKE" />
+<img src="https://res.cloudinary.com/abeke/image/upload/v1701859078/custom/animation.gif" alt="Abdullah EKE" />
 <br />
 <h1 align="center">Hi, I'm Abdullah EKE  👋</h1>
 <h3 align="center">Self-Employed | Full-Stack Developer based in Turkey </h3> 
