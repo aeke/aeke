@@ -1,4 +1,4 @@
-<img src="https://camo.githubusercontent.com/8080b30f076c3968c97d6e5ec4b5d823b83d998bdb785b08e2eb8e9bdd11791a/68747470733a2f2f692e6b696e6a612d696d672e636f6d2f6761776b65722d6d656469612f696d6167652f75706c6f61642f745f6f726967696e616c2f70776c396d7767307175357664616777737464652e676966" alt="Abdullah EKE" />
+<img src="https://res.cloudinary.com/abeke/image/upload/v1701858051/custom/ezgif-1-ed63983eaf.gif" alt="Abdullah EKE" />
 <br />
 <h1 align="center">Hi, I'm Abdullah EKE  👋</h1>
 <h3 align="center">Self-Employed | Full-Stack Developer based in Turkey </h3> 
