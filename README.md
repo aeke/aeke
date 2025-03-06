@@ -1,25 +1,47 @@
 <img src="https://res.cloudinary.com/abeke/image/upload/v1701859078/custom/animation.gif" alt="Abdullah EKE" />
-<br />
-<h1 align="center">Hi, I'm Abdullah EKE  👋</h1>
-<h3 align="center">Self-Employed | Full-Stack Developer based in Turkey </h3> 
-<p>Hello! I'm a dedicated Full-Stack Developer with many years of experience in building scalable, efficient, and user-friendly web applications. My journey in the tech world has been marked by a continuous quest for learning and innovation, honing my skills in a wide range of technologies and frameworks.</p>
-<hr/>
 
-### TECH STACK
-<p>JAVA / PYTHON / PHP / FLUTTER / DART / MYSQL / MONGODB / ELASTICSEARCH / REDIS / JS / REACT /  NODE JS / JQUERY / HTML / CSS / SCSS / LESS / BOOSTRAP / LARAVEL / SYMFONY / CODEIGNITER / UNIX / GIT / SVN / APACHE / NGINX / REST API / AZURE / AWS / GOOGLE API's</p>
-
----
+<h1 align="center">Hi, I'm Abdullah EKE 👋</h1>
+<h3 align="center">Self-Employed | Full-Stack Developer based in Turkey</h3>
 
 <p align="center">
-<a href="https://github.com/aeke">
-  <img height="180em" align="center" src="https://github-readme-stats.vercel.app/api?username=aeke&show_icons=true&locale=en&theme=algolia&include_all_commits=true&count_private=true" alt="aeke"/>
-    </a>
-	<a href="https://github.com/aeke">
- <img height="180em" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=aeke&show_icons=true&locale=en&layout=compact&langs_count=8&theme=algolia" alt="aeke"/>
-  </a>
-  
+🚀 Passionate Full-Stack Developer with years of experience in building scalable, efficient, and user-friendly applications. <br/>
+🎯 Always eager to learn, innovate, and solve complex problems using modern technologies.
+</p>
+
 ---
-  
-#### 🔗 Connect with me on :
-[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/harshkumarkhatri/)](https://www.linkedin.com/in/eke/) 
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/abdullaheke/)](https://twitter.com/abdullaheke/) 
+
+## 🛠 Tech Stack
+```yaml
+Languages:       Java, Python, PHP, Dart, JavaScript, TypeScript
+Mobile:          Flutter, React Native
+Frontend:        React, Next.js, jQuery, HTML, CSS, SCSS, LESS, Bootstrap
+Backend:         Node.js, Laravel, Symfony, CodeIgniter
+Databases:       MySQL, MongoDB, Elasticsearch, Redis
+DevOps & Cloud:  AWS, Azure, Google Cloud, Docker, Kubernetes
+Tools:           Git, SVN, Apache, Nginx, REST API, GraphQL, UNIX
+```
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <a href="https://github.com/aeke">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aeke&show_icons=true&locale=en&theme=algolia&include_all_commits=true&count_private=true"/>
+  </a>
+  <a href="https://github.com/aeke">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=aeke&show_icons=true&locale=en&layout=compact&langs_count=8&theme=algolia"/>
+  </a>
+</p>
+
+---
+
+## 🔗 Connect with Me
+<p align="center">
+  <a href="https://www.linkedin.com/in/eke/" target="_blank">
+    <img src="https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white"/>
+  </a>
+  <a href="https://twitter.com/abdullaheke" target="_blank">
+    <img src="https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=Twitter&logoColor=white"/>
+  </a>
+</p>
+
