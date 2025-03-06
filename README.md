@@ -14,9 +14,9 @@
 ```yaml
 Languages:       Java, Python, PHP, Dart, JavaScript, TypeScript
 Mobile:          Flutter, React Native
-Frontend:        React, Next.js, jQuery, HTML, CSS, SCSS, LESS, Bootstrap
-Backend:         Node.js, Laravel, Symfony, CodeIgniter
-Databases:       MySQL, MongoDB, Elasticsearch, Redis
+Frontend:        React, Next.js, jQuery, HTML, CSS, SCSS, LESS, Bootstrap, Tailwind
+Backend:         Node.js, Laravel, Symfony, CodeIgniter, NestJS
+Databases:       MySQL, MongoDB, Elasticsearch, Redis, Memcache
 DevOps & Cloud:  AWS, Azure, Google Cloud, Docker, Kubernetes
 Tools:           Git, SVN, Apache, Nginx, REST API, GraphQL, UNIX
 ```
