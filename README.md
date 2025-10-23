@@ -1,12 +1,13 @@
-<img src="https://res.cloudinary.com/abeke/image/upload/v1701859078/custom/animation.gif" alt="Abdullah EKE" />
+<div align="center">
+  <img src="https://res.cloudinary.com/abeke/image/upload/v1701859078/custom/animation.gif" alt="Abdullah EKE" style="width: 100vw"/>
+</div>
 
-<h1 align="center">Hi, I'm Abdullah EKE 👋</h1>
-<h3 align="center">Self-Employed | Full-Stack Developer based in Türkiye</h3>
+# Abdullah EKE 👋
 
-<p align="center">
-🚀 Passionate Full-Stack Developer with years of experience in building scalable, efficient, and user-friendly applications. <br/>
-🎯 Always eager to learn, innovate, and solve complex problems using modern technologies.
-</p>
+**Self‑Employed · Full‑Stack Developer · Turkey**
+
+Hello! I’m a Full‑Stack Developer with years of experience building scalable, efficient and user‑friendly applications. I’m passionate about learning new technologies quickly and solving complex problems with creative solutions. My goal is to produce high‑quality software while sharing knowledge with the community and growing together.
+
 
 ---
 
