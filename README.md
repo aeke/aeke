@@ -24,18 +24,6 @@ Tools:           Git, SVN, Apache, Nginx, REST API, GraphQL, UNIX
 
 ---
 
-## 📊 GitHub Stats
-<p align="center">
-  <a href="https://github.com/aeke">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aeke&show_icons=true&locale=en&theme=algolia&include_all_commits=true&count_private=true"/>
-  </a>
-  <a href="https://github.com/aeke">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=aeke&show_icons=true&locale=en&layout=compact&langs_count=8&theme=algolia"/>
-  </a>
-</p>
-
----
-
 ## 🔗 Connect with Me
 <p align="center">
   <a href="https://www.linkedin.com/in/eke/" target="_blank">
