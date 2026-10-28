@@ -1,806 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" preserveAspectRatio="xMidYMid slice" font-family="Consolas, 'Courier New', monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,Menlo,monospace">
 <defs>
-<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00ff9c" stop-opacity="0"/><stop offset="1" stop-color="#00ff9c" stop-opacity="1"/></linearGradient>
-<radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.85"/></radialGradient>
-<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity="0.18"/></pattern>
-<filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060f"/><stop offset="0.6" stop-color="#0a0b1e"/><stop offset="1" stop-color="#071a1f"/></linearGradient>
+<linearGradient id="ink" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="0.5" stop-color="#22d3ee" stop-opacity=".35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#334155" opacity=".55"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="ed"><rect x="660" y="36" width="500" height="268" rx="12"/></clipPath>
 </defs>
-<style>
-.col{animation:fall linear infinite;}
-@keyframes fall{from{transform:translateY(-100%)}to{transform:translateY(130%)}}
-.cur{animation:blink 1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.flick{animation:flick 6s infinite}
-@keyframes flick{0%,96%,100%{opacity:1}97%{opacity:.6}98%{opacity:1}99%{opacity:.75}}
-</style>
-<rect width="1200" height="320" fill="#020806"/>
-<g opacity="0.55">
-<g class="col" style="animation-duration:9.69s;animation-delay:-3.95s" opacity="0.28">
-<text x="8" y="0" font-size="16" fill="#00ff9c" opacity="0.08">オ</text>
-<text x="8" y="20" font-size="16" fill="#00ff9c" opacity="0.15">シ</text>
-<text x="8" y="40" font-size="16" fill="#00ff9c" opacity="0.23">/</text>
-<text x="8" y="60" font-size="16" fill="#00ff9c" opacity="0.31">セ</text>
-<text x="8" y="80" font-size="16" fill="#00ff9c" opacity="0.38">イ</text>
-<text x="8" y="100" font-size="16" fill="#00ff9c" opacity="0.46">イ</text>
-<text x="8" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ス</text>
-<text x="8" y="140" font-size="16" fill="#00ff9c" opacity="0.62">チ</text>
-<text x="8" y="160" font-size="16" fill="#00ff9c" opacity="0.69">カ</text>
-<text x="8" y="180" font-size="16" fill="#00ff9c" opacity="0.77">オ</text>
-<text x="8" y="200" font-size="16" fill="#00ff9c" opacity="0.85">オ</text>
-<text x="8" y="220" font-size="16" fill="#00ff9c" opacity="0.92">シ</text>
-<text x="8" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">/</text>
-</g>
-<g class="col" style="animation-duration:6.79s;animation-delay:-9.23s" opacity="0.49">
-<text x="30" y="0" font-size="16" fill="#00ff9c" opacity="0.08">セ</text>
-<text x="30" y="20" font-size="16" fill="#00ff9c" opacity="0.15">#</text>
-<text x="30" y="40" font-size="16" fill="#00ff9c" opacity="0.23">チ</text>
-<text x="30" y="60" font-size="16" fill="#00ff9c" opacity="0.31">]</text>
-<text x="30" y="80" font-size="16" fill="#00ff9c" opacity="0.38">ク</text>
-<text x="30" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ア</text>
-<text x="30" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ト</text>
-<text x="30" y="140" font-size="16" fill="#00ff9c" opacity="0.62">;</text>
-<text x="30" y="160" font-size="16" fill="#00ff9c" opacity="0.69">タ</text>
-<text x="30" y="180" font-size="16" fill="#00ff9c" opacity="0.77">イ</text>
-<text x="30" y="200" font-size="16" fill="#00ff9c" opacity="0.85">チ</text>
-<text x="30" y="220" font-size="16" fill="#00ff9c" opacity="0.92">1</text>
-<text x="30" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">ケ</text>
-</g>
-<g class="col" style="animation-duration:6.96s;animation-delay:-2.18s" opacity="0.44">
-<text x="52" y="0" font-size="16" fill="#00ff9c" opacity="0.11">[</text>
-<text x="52" y="20" font-size="16" fill="#00ff9c" opacity="0.22">ケ</text>
-<text x="52" y="40" font-size="16" fill="#00ff9c" opacity="0.33">[</text>
-<text x="52" y="60" font-size="16" fill="#00ff9c" opacity="0.44">/</text>
-<text x="52" y="80" font-size="16" fill="#00ff9c" opacity="0.56">ナ</text>
-<text x="52" y="100" font-size="16" fill="#00ff9c" opacity="0.67">ク</text>
-<text x="52" y="120" font-size="16" fill="#00ff9c" opacity="0.78">ク</text>
-<text x="52" y="140" font-size="16" fill="#00ff9c" opacity="0.89">0</text>
-<text x="52" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">ソ</text>
-</g>
-<g class="col" style="animation-duration:4.02s;animation-delay:-4.19s" opacity="0.49">
-<text x="74" y="0" font-size="16" fill="#00ff9c" opacity="0.08">イ</text>
-<text x="74" y="20" font-size="16" fill="#00ff9c" opacity="0.17">[</text>
-<text x="74" y="40" font-size="16" fill="#00ff9c" opacity="0.25">オ</text>
-<text x="74" y="60" font-size="16" fill="#00ff9c" opacity="0.33">イ</text>
-<text x="74" y="80" font-size="16" fill="#00ff9c" opacity="0.42">シ</text>
-<text x="74" y="100" font-size="16" fill="#00ff9c" opacity="0.50">ケ</text>
-<text x="74" y="120" font-size="16" fill="#00ff9c" opacity="0.58">イ</text>
-<text x="74" y="140" font-size="16" fill="#00ff9c" opacity="0.67">ク</text>
-<text x="74" y="160" font-size="16" fill="#00ff9c" opacity="0.75">オ</text>
-<text x="74" y="180" font-size="16" fill="#00ff9c" opacity="0.83">ウ</text>
-<text x="74" y="200" font-size="16" fill="#00ff9c" opacity="0.92">ク</text>
-<text x="74" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">{</text>
-</g>
-<g class="col" style="animation-duration:4.74s;animation-delay:-8.49s" opacity="0.90">
-<text x="96" y="0" font-size="16" fill="#00ff9c" opacity="0.07">$</text>
-<text x="96" y="20" font-size="16" fill="#00ff9c" opacity="0.13">ク</text>
-<text x="96" y="40" font-size="16" fill="#00ff9c" opacity="0.20">ソ</text>
-<text x="96" y="60" font-size="16" fill="#00ff9c" opacity="0.27">1</text>
-<text x="96" y="80" font-size="16" fill="#00ff9c" opacity="0.33">{</text>
-<text x="96" y="100" font-size="16" fill="#00ff9c" opacity="0.40">1</text>
-<text x="96" y="120" font-size="16" fill="#00ff9c" opacity="0.47">エ</text>
-<text x="96" y="140" font-size="16" fill="#00ff9c" opacity="0.53">{</text>
-<text x="96" y="160" font-size="16" fill="#00ff9c" opacity="0.60">ス</text>
-<text x="96" y="180" font-size="16" fill="#00ff9c" opacity="0.67">ト</text>
-<text x="96" y="200" font-size="16" fill="#00ff9c" opacity="0.73">セ</text>
-<text x="96" y="220" font-size="16" fill="#00ff9c" opacity="0.80">サ</text>
-<text x="96" y="240" font-size="16" fill="#00ff9c" opacity="0.87">ナ</text>
-<text x="96" y="260" font-size="16" fill="#00ff9c" opacity="0.93">タ</text>
-<text x="96" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">サ</text>
-</g>
-<g class="col" style="animation-duration:6.68s;animation-delay:-9.37s" opacity="0.89">
-<text x="118" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ス</text>
-<text x="118" y="20" font-size="16" fill="#00ff9c" opacity="0.15">$</text>
-<text x="118" y="40" font-size="16" fill="#00ff9c" opacity="0.23">シ</text>
-<text x="118" y="60" font-size="16" fill="#00ff9c" opacity="0.31">$</text>
-<text x="118" y="80" font-size="16" fill="#00ff9c" opacity="0.38">カ</text>
-<text x="118" y="100" font-size="16" fill="#00ff9c" opacity="0.46">$</text>
-<text x="118" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ト</text>
-<text x="118" y="140" font-size="16" fill="#00ff9c" opacity="0.62">;</text>
-<text x="118" y="160" font-size="16" fill="#00ff9c" opacity="0.69">ケ</text>
-<text x="118" y="180" font-size="16" fill="#00ff9c" opacity="0.77">1</text>
-<text x="118" y="200" font-size="16" fill="#00ff9c" opacity="0.85">ク</text>
-<text x="118" y="220" font-size="16" fill="#00ff9c" opacity="0.92">ク</text>
-<text x="118" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">0</text>
-</g>
-<g class="col" style="animation-duration:7.16s;animation-delay:-9.34s" opacity="0.53">
-<text x="140" y="0" font-size="16" fill="#00ff9c" opacity="0.11">1</text>
-<text x="140" y="20" font-size="16" fill="#00ff9c" opacity="0.22">チ</text>
-<text x="140" y="40" font-size="16" fill="#00ff9c" opacity="0.33">テ</text>
-<text x="140" y="60" font-size="16" fill="#00ff9c" opacity="0.44">]</text>
-<text x="140" y="80" font-size="16" fill="#00ff9c" opacity="0.56">ナ</text>
-<text x="140" y="100" font-size="16" fill="#00ff9c" opacity="0.67">]</text>
-<text x="140" y="120" font-size="16" fill="#00ff9c" opacity="0.78">ク</text>
-<text x="140" y="140" font-size="16" fill="#00ff9c" opacity="0.89">1</text>
-<text x="140" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">コ</text>
-</g>
-<g class="col" style="animation-duration:8.66s;animation-delay:-1.50s" opacity="0.34">
-<text x="162" y="0" font-size="16" fill="#00ff9c" opacity="0.12">テ</text>
-<text x="162" y="20" font-size="16" fill="#00ff9c" opacity="0.25">$</text>
-<text x="162" y="40" font-size="16" fill="#00ff9c" opacity="0.38">セ</text>
-<text x="162" y="60" font-size="16" fill="#00ff9c" opacity="0.50">ア</text>
-<text x="162" y="80" font-size="16" fill="#00ff9c" opacity="0.62">=</text>
-<text x="162" y="100" font-size="16" fill="#00ff9c" opacity="0.75">=</text>
-<text x="162" y="120" font-size="16" fill="#00ff9c" opacity="0.88">サ</text>
-<text x="162" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">$</text>
-</g>
-<g class="col" style="animation-duration:9.65s;animation-delay:-6.99s" opacity="0.82">
-<text x="184" y="0" font-size="16" fill="#00ff9c" opacity="0.06">=</text>
-<text x="184" y="20" font-size="16" fill="#00ff9c" opacity="0.12">カ</text>
-<text x="184" y="40" font-size="16" fill="#00ff9c" opacity="0.19">テ</text>
-<text x="184" y="60" font-size="16" fill="#00ff9c" opacity="0.25">/</text>
-<text x="184" y="80" font-size="16" fill="#00ff9c" opacity="0.31">ツ</text>
-<text x="184" y="100" font-size="16" fill="#00ff9c" opacity="0.38">{</text>
-<text x="184" y="120" font-size="16" fill="#00ff9c" opacity="0.44">キ</text>
-<text x="184" y="140" font-size="16" fill="#00ff9c" opacity="0.50">オ</text>
-<text x="184" y="160" font-size="16" fill="#00ff9c" opacity="0.56">ケ</text>
-<text x="184" y="180" font-size="16" fill="#00ff9c" opacity="0.62">/</text>
-<text x="184" y="200" font-size="16" fill="#00ff9c" opacity="0.69">ト</text>
-<text x="184" y="220" font-size="16" fill="#00ff9c" opacity="0.75">ナ</text>
-<text x="184" y="240" font-size="16" fill="#00ff9c" opacity="0.81">{</text>
-<text x="184" y="260" font-size="16" fill="#00ff9c" opacity="0.88">;</text>
-<text x="184" y="280" font-size="16" fill="#00ff9c" opacity="0.94">1</text>
-<text x="184" y="300" font-size="16" fill="#d9ffe9" opacity="1.00">チ</text>
-</g>
-<g class="col" style="animation-duration:9.76s;animation-delay:-1.13s" opacity="0.85">
-<text x="206" y="0" font-size="16" fill="#00ff9c" opacity="0.06">エ</text>
-<text x="206" y="20" font-size="16" fill="#00ff9c" opacity="0.12">ア</text>
-<text x="206" y="40" font-size="16" fill="#00ff9c" opacity="0.19">キ</text>
-<text x="206" y="60" font-size="16" fill="#00ff9c" opacity="0.25">ソ</text>
-<text x="206" y="80" font-size="16" fill="#00ff9c" opacity="0.31">#</text>
-<text x="206" y="100" font-size="16" fill="#00ff9c" opacity="0.38">タ</text>
-<text x="206" y="120" font-size="16" fill="#00ff9c" opacity="0.44">/</text>
-<text x="206" y="140" font-size="16" fill="#00ff9c" opacity="0.50">1</text>
-<text x="206" y="160" font-size="16" fill="#00ff9c" opacity="0.56">エ</text>
-<text x="206" y="180" font-size="16" fill="#00ff9c" opacity="0.62">ソ</text>
-<text x="206" y="200" font-size="16" fill="#00ff9c" opacity="0.69">0</text>
-<text x="206" y="220" font-size="16" fill="#00ff9c" opacity="0.75">タ</text>
-<text x="206" y="240" font-size="16" fill="#00ff9c" opacity="0.81">セ</text>
-<text x="206" y="260" font-size="16" fill="#00ff9c" opacity="0.88">ソ</text>
-<text x="206" y="280" font-size="16" fill="#00ff9c" opacity="0.94">サ</text>
-<text x="206" y="300" font-size="16" fill="#d9ffe9" opacity="1.00">シ</text>
-</g>
-<g class="col" style="animation-duration:6.67s;animation-delay:-6.72s" opacity="0.43">
-<text x="228" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ア</text>
-<text x="228" y="20" font-size="16" fill="#00ff9c" opacity="0.17">サ</text>
-<text x="228" y="40" font-size="16" fill="#00ff9c" opacity="0.25">セ</text>
-<text x="228" y="60" font-size="16" fill="#00ff9c" opacity="0.33">オ</text>
-<text x="228" y="80" font-size="16" fill="#00ff9c" opacity="0.42">#</text>
-<text x="228" y="100" font-size="16" fill="#00ff9c" opacity="0.50">[</text>
-<text x="228" y="120" font-size="16" fill="#00ff9c" opacity="0.58">シ</text>
-<text x="228" y="140" font-size="16" fill="#00ff9c" opacity="0.67">サ</text>
-<text x="228" y="160" font-size="16" fill="#00ff9c" opacity="0.75">ナ</text>
-<text x="228" y="180" font-size="16" fill="#00ff9c" opacity="0.83">0</text>
-<text x="228" y="200" font-size="16" fill="#00ff9c" opacity="0.92">/</text>
-<text x="228" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">エ</text>
-</g>
-<g class="col" style="animation-duration:9.22s;animation-delay:-6.71s" opacity="0.43">
-<text x="250" y="0" font-size="16" fill="#00ff9c" opacity="0.07">ア</text>
-<text x="250" y="20" font-size="16" fill="#00ff9c" opacity="0.14">ケ</text>
-<text x="250" y="40" font-size="16" fill="#00ff9c" opacity="0.21">0</text>
-<text x="250" y="60" font-size="16" fill="#00ff9c" opacity="0.29">ト</text>
-<text x="250" y="80" font-size="16" fill="#00ff9c" opacity="0.36">ア</text>
-<text x="250" y="100" font-size="16" fill="#00ff9c" opacity="0.43">ナ</text>
-<text x="250" y="120" font-size="16" fill="#00ff9c" opacity="0.50">ト</text>
-<text x="250" y="140" font-size="16" fill="#00ff9c" opacity="0.57">$</text>
-<text x="250" y="160" font-size="16" fill="#00ff9c" opacity="0.64">サ</text>
-<text x="250" y="180" font-size="16" fill="#00ff9c" opacity="0.71">0</text>
-<text x="250" y="200" font-size="16" fill="#00ff9c" opacity="0.79">エ</text>
-<text x="250" y="220" font-size="16" fill="#00ff9c" opacity="0.86">ア</text>
-<text x="250" y="240" font-size="16" fill="#00ff9c" opacity="0.93">ツ</text>
-<text x="250" y="260" font-size="16" fill="#d9ffe9" opacity="1.00">エ</text>
-</g>
-<g class="col" style="animation-duration:9.12s;animation-delay:-1.55s" opacity="0.83">
-<text x="272" y="0" font-size="16" fill="#00ff9c" opacity="0.06">#</text>
-<text x="272" y="20" font-size="16" fill="#00ff9c" opacity="0.12">ク</text>
-<text x="272" y="40" font-size="16" fill="#00ff9c" opacity="0.19">/</text>
-<text x="272" y="60" font-size="16" fill="#00ff9c" opacity="0.25">1</text>
-<text x="272" y="80" font-size="16" fill="#00ff9c" opacity="0.31">1</text>
-<text x="272" y="100" font-size="16" fill="#00ff9c" opacity="0.38">{</text>
-<text x="272" y="120" font-size="16" fill="#00ff9c" opacity="0.44">=</text>
-<text x="272" y="140" font-size="16" fill="#00ff9c" opacity="0.50">セ</text>
-<text x="272" y="160" font-size="16" fill="#00ff9c" opacity="0.56">0</text>
-<text x="272" y="180" font-size="16" fill="#00ff9c" opacity="0.62">エ</text>
-<text x="272" y="200" font-size="16" fill="#00ff9c" opacity="0.69">$</text>
-<text x="272" y="220" font-size="16" fill="#00ff9c" opacity="0.75">ソ</text>
-<text x="272" y="240" font-size="16" fill="#00ff9c" opacity="0.81">ス</text>
-<text x="272" y="260" font-size="16" fill="#00ff9c" opacity="0.88">}</text>
-<text x="272" y="280" font-size="16" fill="#00ff9c" opacity="0.94">チ</text>
-<text x="272" y="300" font-size="16" fill="#d9ffe9" opacity="1.00">ウ</text>
-</g>
-<g class="col" style="animation-duration:5.99s;animation-delay:-6.52s" opacity="0.70">
-<text x="294" y="0" font-size="16" fill="#00ff9c" opacity="0.10">$</text>
-<text x="294" y="20" font-size="16" fill="#00ff9c" opacity="0.20">タ</text>
-<text x="294" y="40" font-size="16" fill="#00ff9c" opacity="0.30">#</text>
-<text x="294" y="60" font-size="16" fill="#00ff9c" opacity="0.40">チ</text>
-<text x="294" y="80" font-size="16" fill="#00ff9c" opacity="0.50">;</text>
-<text x="294" y="100" font-size="16" fill="#00ff9c" opacity="0.60">ツ</text>
-<text x="294" y="120" font-size="16" fill="#00ff9c" opacity="0.70">1</text>
-<text x="294" y="140" font-size="16" fill="#00ff9c" opacity="0.80">ウ</text>
-<text x="294" y="160" font-size="16" fill="#00ff9c" opacity="0.90">タ</text>
-<text x="294" y="180" font-size="16" fill="#d9ffe9" opacity="1.00">シ</text>
-</g>
-<g class="col" style="animation-duration:7.49s;animation-delay:-1.42s" opacity="0.59">
-<text x="316" y="0" font-size="16" fill="#00ff9c" opacity="0.11">タ</text>
-<text x="316" y="20" font-size="16" fill="#00ff9c" opacity="0.22">ス</text>
-<text x="316" y="40" font-size="16" fill="#00ff9c" opacity="0.33">[</text>
-<text x="316" y="60" font-size="16" fill="#00ff9c" opacity="0.44">0</text>
-<text x="316" y="80" font-size="16" fill="#00ff9c" opacity="0.56">[</text>
-<text x="316" y="100" font-size="16" fill="#00ff9c" opacity="0.67">]</text>
-<text x="316" y="120" font-size="16" fill="#00ff9c" opacity="0.78">テ</text>
-<text x="316" y="140" font-size="16" fill="#00ff9c" opacity="0.89">0</text>
-<text x="316" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">[</text>
-</g>
-<g class="col" style="animation-duration:9.64s;animation-delay:-1.96s" opacity="0.26">
-<text x="338" y="0" font-size="16" fill="#00ff9c" opacity="0.11">{</text>
-<text x="338" y="20" font-size="16" fill="#00ff9c" opacity="0.22">}</text>
-<text x="338" y="40" font-size="16" fill="#00ff9c" opacity="0.33">/</text>
-<text x="338" y="60" font-size="16" fill="#00ff9c" opacity="0.44">タ</text>
-<text x="338" y="80" font-size="16" fill="#00ff9c" opacity="0.56">チ</text>
-<text x="338" y="100" font-size="16" fill="#00ff9c" opacity="0.67">タ</text>
-<text x="338" y="120" font-size="16" fill="#00ff9c" opacity="0.78">テ</text>
-<text x="338" y="140" font-size="16" fill="#00ff9c" opacity="0.89">/</text>
-<text x="338" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">シ</text>
-</g>
-<g class="col" style="animation-duration:4.30s;animation-delay:-7.32s" opacity="0.54">
-<text x="360" y="0" font-size="16" fill="#00ff9c" opacity="0.11">#</text>
-<text x="360" y="20" font-size="16" fill="#00ff9c" opacity="0.22">ケ</text>
-<text x="360" y="40" font-size="16" fill="#00ff9c" opacity="0.33">ト</text>
-<text x="360" y="60" font-size="16" fill="#00ff9c" opacity="0.44">ソ</text>
-<text x="360" y="80" font-size="16" fill="#00ff9c" opacity="0.56">セ</text>
-<text x="360" y="100" font-size="16" fill="#00ff9c" opacity="0.67">[</text>
-<text x="360" y="120" font-size="16" fill="#00ff9c" opacity="0.78">ケ</text>
-<text x="360" y="140" font-size="16" fill="#00ff9c" opacity="0.89">#</text>
-<text x="360" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">ト</text>
-</g>
-<g class="col" style="animation-duration:6.56s;animation-delay:-5.48s" opacity="0.41">
-<text x="382" y="0" font-size="16" fill="#00ff9c" opacity="0.07">エ</text>
-<text x="382" y="20" font-size="16" fill="#00ff9c" opacity="0.13">{</text>
-<text x="382" y="40" font-size="16" fill="#00ff9c" opacity="0.20">1</text>
-<text x="382" y="60" font-size="16" fill="#00ff9c" opacity="0.27">]</text>
-<text x="382" y="80" font-size="16" fill="#00ff9c" opacity="0.33">}</text>
-<text x="382" y="100" font-size="16" fill="#00ff9c" opacity="0.40">イ</text>
-<text x="382" y="120" font-size="16" fill="#00ff9c" opacity="0.47">{</text>
-<text x="382" y="140" font-size="16" fill="#00ff9c" opacity="0.53">シ</text>
-<text x="382" y="160" font-size="16" fill="#00ff9c" opacity="0.60">セ</text>
-<text x="382" y="180" font-size="16" fill="#00ff9c" opacity="0.67">=</text>
-<text x="382" y="200" font-size="16" fill="#00ff9c" opacity="0.73">ツ</text>
-<text x="382" y="220" font-size="16" fill="#00ff9c" opacity="0.80">ア</text>
-<text x="382" y="240" font-size="16" fill="#00ff9c" opacity="0.87">$</text>
-<text x="382" y="260" font-size="16" fill="#00ff9c" opacity="0.93">ウ</text>
-<text x="382" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">;</text>
-</g>
-<g class="col" style="animation-duration:5.49s;animation-delay:-1.09s" opacity="0.35">
-<text x="404" y="0" font-size="16" fill="#00ff9c" opacity="0.07">;</text>
-<text x="404" y="20" font-size="16" fill="#00ff9c" opacity="0.13">0</text>
-<text x="404" y="40" font-size="16" fill="#00ff9c" opacity="0.20">ア</text>
-<text x="404" y="60" font-size="16" fill="#00ff9c" opacity="0.27">ソ</text>
-<text x="404" y="80" font-size="16" fill="#00ff9c" opacity="0.33">カ</text>
-<text x="404" y="100" font-size="16" fill="#00ff9c" opacity="0.40">ツ</text>
-<text x="404" y="120" font-size="16" fill="#00ff9c" opacity="0.47">}</text>
-<text x="404" y="140" font-size="16" fill="#00ff9c" opacity="0.53">0</text>
-<text x="404" y="160" font-size="16" fill="#00ff9c" opacity="0.60">ツ</text>
-<text x="404" y="180" font-size="16" fill="#00ff9c" opacity="0.67">テ</text>
-<text x="404" y="200" font-size="16" fill="#00ff9c" opacity="0.73">セ</text>
-<text x="404" y="220" font-size="16" fill="#00ff9c" opacity="0.80">]</text>
-<text x="404" y="240" font-size="16" fill="#00ff9c" opacity="0.87">1</text>
-<text x="404" y="260" font-size="16" fill="#00ff9c" opacity="0.93">]</text>
-<text x="404" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">ス</text>
-</g>
-<g class="col" style="animation-duration:9.55s;animation-delay:-2.27s" opacity="0.27">
-<text x="426" y="0" font-size="16" fill="#00ff9c" opacity="0.07">{</text>
-<text x="426" y="20" font-size="16" fill="#00ff9c" opacity="0.14">0</text>
-<text x="426" y="40" font-size="16" fill="#00ff9c" opacity="0.21">ウ</text>
-<text x="426" y="60" font-size="16" fill="#00ff9c" opacity="0.29">サ</text>
-<text x="426" y="80" font-size="16" fill="#00ff9c" opacity="0.36">ス</text>
-<text x="426" y="100" font-size="16" fill="#00ff9c" opacity="0.43">ソ</text>
-<text x="426" y="120" font-size="16" fill="#00ff9c" opacity="0.50">#</text>
-<text x="426" y="140" font-size="16" fill="#00ff9c" opacity="0.57">#</text>
-<text x="426" y="160" font-size="16" fill="#00ff9c" opacity="0.64">ク</text>
-<text x="426" y="180" font-size="16" fill="#00ff9c" opacity="0.71">シ</text>
-<text x="426" y="200" font-size="16" fill="#00ff9c" opacity="0.79">]</text>
-<text x="426" y="220" font-size="16" fill="#00ff9c" opacity="0.86">コ</text>
-<text x="426" y="240" font-size="16" fill="#00ff9c" opacity="0.93">テ</text>
-<text x="426" y="260" font-size="16" fill="#d9ffe9" opacity="1.00">ケ</text>
-</g>
-<g class="col" style="animation-duration:5.14s;animation-delay:-6.52s" opacity="0.59">
-<text x="448" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ツ</text>
-<text x="448" y="20" font-size="16" fill="#00ff9c" opacity="0.15">ト</text>
-<text x="448" y="40" font-size="16" fill="#00ff9c" opacity="0.23">ケ</text>
-<text x="448" y="60" font-size="16" fill="#00ff9c" opacity="0.31">エ</text>
-<text x="448" y="80" font-size="16" fill="#00ff9c" opacity="0.38">ナ</text>
-<text x="448" y="100" font-size="16" fill="#00ff9c" opacity="0.46">シ</text>
-<text x="448" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ツ</text>
-<text x="448" y="140" font-size="16" fill="#00ff9c" opacity="0.62">エ</text>
-<text x="448" y="160" font-size="16" fill="#00ff9c" opacity="0.69">サ</text>
-<text x="448" y="180" font-size="16" fill="#00ff9c" opacity="0.77">=</text>
-<text x="448" y="200" font-size="16" fill="#00ff9c" opacity="0.85">{</text>
-<text x="448" y="220" font-size="16" fill="#00ff9c" opacity="0.92">]</text>
-<text x="448" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">ア</text>
-</g>
-<g class="col" style="animation-duration:4.21s;animation-delay:-0.63s" opacity="0.85">
-<text x="470" y="0" font-size="16" fill="#00ff9c" opacity="0.07">ウ</text>
-<text x="470" y="20" font-size="16" fill="#00ff9c" opacity="0.14">タ</text>
-<text x="470" y="40" font-size="16" fill="#00ff9c" opacity="0.21">ソ</text>
-<text x="470" y="60" font-size="16" fill="#00ff9c" opacity="0.29">ツ</text>
-<text x="470" y="80" font-size="16" fill="#00ff9c" opacity="0.36">1</text>
-<text x="470" y="100" font-size="16" fill="#00ff9c" opacity="0.43">$</text>
-<text x="470" y="120" font-size="16" fill="#00ff9c" opacity="0.50">ソ</text>
-<text x="470" y="140" font-size="16" fill="#00ff9c" opacity="0.57">#</text>
-<text x="470" y="160" font-size="16" fill="#00ff9c" opacity="0.64">コ</text>
-<text x="470" y="180" font-size="16" fill="#00ff9c" opacity="0.71">ク</text>
-<text x="470" y="200" font-size="16" fill="#00ff9c" opacity="0.79">テ</text>
-<text x="470" y="220" font-size="16" fill="#00ff9c" opacity="0.86">エ</text>
-<text x="470" y="240" font-size="16" fill="#00ff9c" opacity="0.93">[</text>
-<text x="470" y="260" font-size="16" fill="#d9ffe9" opacity="1.00">]</text>
-</g>
-<g class="col" style="animation-duration:7.90s;animation-delay:-4.82s" opacity="0.60">
-<text x="492" y="0" font-size="16" fill="#00ff9c" opacity="0.11">オ</text>
-<text x="492" y="20" font-size="16" fill="#00ff9c" opacity="0.22">エ</text>
-<text x="492" y="40" font-size="16" fill="#00ff9c" opacity="0.33">]</text>
-<text x="492" y="60" font-size="16" fill="#00ff9c" opacity="0.44">コ</text>
-<text x="492" y="80" font-size="16" fill="#00ff9c" opacity="0.56">]</text>
-<text x="492" y="100" font-size="16" fill="#00ff9c" opacity="0.67">カ</text>
-<text x="492" y="120" font-size="16" fill="#00ff9c" opacity="0.78">タ</text>
-<text x="492" y="140" font-size="16" fill="#00ff9c" opacity="0.89">ソ</text>
-<text x="492" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">=</text>
-</g>
-<g class="col" style="animation-duration:5.11s;animation-delay:-2.36s" opacity="0.43">
-<text x="514" y="0" font-size="16" fill="#00ff9c" opacity="0.09">ウ</text>
-<text x="514" y="20" font-size="16" fill="#00ff9c" opacity="0.18">セ</text>
-<text x="514" y="40" font-size="16" fill="#00ff9c" opacity="0.27">ス</text>
-<text x="514" y="60" font-size="16" fill="#00ff9c" opacity="0.36">ア</text>
-<text x="514" y="80" font-size="16" fill="#00ff9c" opacity="0.45">$</text>
-<text x="514" y="100" font-size="16" fill="#00ff9c" opacity="0.55">{</text>
-<text x="514" y="120" font-size="16" fill="#00ff9c" opacity="0.64">ス</text>
-<text x="514" y="140" font-size="16" fill="#00ff9c" opacity="0.73">サ</text>
-<text x="514" y="160" font-size="16" fill="#00ff9c" opacity="0.82">{</text>
-<text x="514" y="180" font-size="16" fill="#00ff9c" opacity="0.91">=</text>
-<text x="514" y="200" font-size="16" fill="#d9ffe9" opacity="1.00">オ</text>
-</g>
-<g class="col" style="animation-duration:5.31s;animation-delay:-3.69s" opacity="0.34">
-<text x="536" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ア</text>
-<text x="536" y="20" font-size="16" fill="#00ff9c" opacity="0.15">テ</text>
-<text x="536" y="40" font-size="16" fill="#00ff9c" opacity="0.23">コ</text>
-<text x="536" y="60" font-size="16" fill="#00ff9c" opacity="0.31">シ</text>
-<text x="536" y="80" font-size="16" fill="#00ff9c" opacity="0.38">$</text>
-<text x="536" y="100" font-size="16" fill="#00ff9c" opacity="0.46">オ</text>
-<text x="536" y="120" font-size="16" fill="#00ff9c" opacity="0.54">エ</text>
-<text x="536" y="140" font-size="16" fill="#00ff9c" opacity="0.62">タ</text>
-<text x="536" y="160" font-size="16" fill="#00ff9c" opacity="0.69">ツ</text>
-<text x="536" y="180" font-size="16" fill="#00ff9c" opacity="0.77">ツ</text>
-<text x="536" y="200" font-size="16" fill="#00ff9c" opacity="0.85">]</text>
-<text x="536" y="220" font-size="16" fill="#00ff9c" opacity="0.92">サ</text>
-<text x="536" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">シ</text>
-</g>
-<g class="col" style="animation-duration:6.60s;animation-delay:-1.57s" opacity="0.32">
-<text x="558" y="0" font-size="16" fill="#00ff9c" opacity="0.12">{</text>
-<text x="558" y="20" font-size="16" fill="#00ff9c" opacity="0.25">キ</text>
-<text x="558" y="40" font-size="16" fill="#00ff9c" opacity="0.38">ク</text>
-<text x="558" y="60" font-size="16" fill="#00ff9c" opacity="0.50">{</text>
-<text x="558" y="80" font-size="16" fill="#00ff9c" opacity="0.62">ク</text>
-<text x="558" y="100" font-size="16" fill="#00ff9c" opacity="0.75">ケ</text>
-<text x="558" y="120" font-size="16" fill="#00ff9c" opacity="0.88">ウ</text>
-<text x="558" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">#</text>
-</g>
-<g class="col" style="animation-duration:5.81s;animation-delay:-8.37s" opacity="0.28">
-<text x="580" y="0" font-size="16" fill="#00ff9c" opacity="0.09">イ</text>
-<text x="580" y="20" font-size="16" fill="#00ff9c" opacity="0.18">ケ</text>
-<text x="580" y="40" font-size="16" fill="#00ff9c" opacity="0.27">サ</text>
-<text x="580" y="60" font-size="16" fill="#00ff9c" opacity="0.36">シ</text>
-<text x="580" y="80" font-size="16" fill="#00ff9c" opacity="0.45">ケ</text>
-<text x="580" y="100" font-size="16" fill="#00ff9c" opacity="0.55">カ</text>
-<text x="580" y="120" font-size="16" fill="#00ff9c" opacity="0.64">サ</text>
-<text x="580" y="140" font-size="16" fill="#00ff9c" opacity="0.73">テ</text>
-<text x="580" y="160" font-size="16" fill="#00ff9c" opacity="0.82">;</text>
-<text x="580" y="180" font-size="16" fill="#00ff9c" opacity="0.91">ツ</text>
-<text x="580" y="200" font-size="16" fill="#d9ffe9" opacity="1.00">}</text>
-</g>
-<g class="col" style="animation-duration:6.68s;animation-delay:-4.38s" opacity="0.27">
-<text x="602" y="0" font-size="16" fill="#00ff9c" opacity="0.08">セ</text>
-<text x="602" y="20" font-size="16" fill="#00ff9c" opacity="0.15">;</text>
-<text x="602" y="40" font-size="16" fill="#00ff9c" opacity="0.23">[</text>
-<text x="602" y="60" font-size="16" fill="#00ff9c" opacity="0.31">キ</text>
-<text x="602" y="80" font-size="16" fill="#00ff9c" opacity="0.38">{</text>
-<text x="602" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ア</text>
-<text x="602" y="120" font-size="16" fill="#00ff9c" opacity="0.54">エ</text>
-<text x="602" y="140" font-size="16" fill="#00ff9c" opacity="0.62">エ</text>
-<text x="602" y="160" font-size="16" fill="#00ff9c" opacity="0.69">}</text>
-<text x="602" y="180" font-size="16" fill="#00ff9c" opacity="0.77">ウ</text>
-<text x="602" y="200" font-size="16" fill="#00ff9c" opacity="0.85">キ</text>
-<text x="602" y="220" font-size="16" fill="#00ff9c" opacity="0.92">ケ</text>
-<text x="602" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">ナ</text>
-</g>
-<g class="col" style="animation-duration:4.95s;animation-delay:-8.97s" opacity="0.43">
-<text x="624" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ソ</text>
-<text x="624" y="20" font-size="16" fill="#00ff9c" opacity="0.17">シ</text>
-<text x="624" y="40" font-size="16" fill="#00ff9c" opacity="0.25">セ</text>
-<text x="624" y="60" font-size="16" fill="#00ff9c" opacity="0.33">ア</text>
-<text x="624" y="80" font-size="16" fill="#00ff9c" opacity="0.42">[</text>
-<text x="624" y="100" font-size="16" fill="#00ff9c" opacity="0.50">テ</text>
-<text x="624" y="120" font-size="16" fill="#00ff9c" opacity="0.58">ソ</text>
-<text x="624" y="140" font-size="16" fill="#00ff9c" opacity="0.67">イ</text>
-<text x="624" y="160" font-size="16" fill="#00ff9c" opacity="0.75">オ</text>
-<text x="624" y="180" font-size="16" fill="#00ff9c" opacity="0.83">[</text>
-<text x="624" y="200" font-size="16" fill="#00ff9c" opacity="0.92">}</text>
-<text x="624" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">{</text>
-</g>
-<g class="col" style="animation-duration:8.59s;animation-delay:-4.42s" opacity="0.36">
-<text x="646" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ソ</text>
-<text x="646" y="20" font-size="16" fill="#00ff9c" opacity="0.15">0</text>
-<text x="646" y="40" font-size="16" fill="#00ff9c" opacity="0.23">ク</text>
-<text x="646" y="60" font-size="16" fill="#00ff9c" opacity="0.31">]</text>
-<text x="646" y="80" font-size="16" fill="#00ff9c" opacity="0.38">イ</text>
-<text x="646" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ス</text>
-<text x="646" y="120" font-size="16" fill="#00ff9c" opacity="0.54">イ</text>
-<text x="646" y="140" font-size="16" fill="#00ff9c" opacity="0.62">ツ</text>
-<text x="646" y="160" font-size="16" fill="#00ff9c" opacity="0.69">ナ</text>
-<text x="646" y="180" font-size="16" fill="#00ff9c" opacity="0.77">ス</text>
-<text x="646" y="200" font-size="16" fill="#00ff9c" opacity="0.85">キ</text>
-<text x="646" y="220" font-size="16" fill="#00ff9c" opacity="0.92">$</text>
-<text x="646" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">0</text>
-</g>
-<g class="col" style="animation-duration:8.24s;animation-delay:-4.51s" opacity="0.29">
-<text x="668" y="0" font-size="16" fill="#00ff9c" opacity="0.09">[</text>
-<text x="668" y="20" font-size="16" fill="#00ff9c" opacity="0.18">イ</text>
-<text x="668" y="40" font-size="16" fill="#00ff9c" opacity="0.27">#</text>
-<text x="668" y="60" font-size="16" fill="#00ff9c" opacity="0.36">0</text>
-<text x="668" y="80" font-size="16" fill="#00ff9c" opacity="0.45">1</text>
-<text x="668" y="100" font-size="16" fill="#00ff9c" opacity="0.55">セ</text>
-<text x="668" y="120" font-size="16" fill="#00ff9c" opacity="0.64">オ</text>
-<text x="668" y="140" font-size="16" fill="#00ff9c" opacity="0.73">ク</text>
-<text x="668" y="160" font-size="16" fill="#00ff9c" opacity="0.82">]</text>
-<text x="668" y="180" font-size="16" fill="#00ff9c" opacity="0.91">ツ</text>
-<text x="668" y="200" font-size="16" fill="#d9ffe9" opacity="1.00">イ</text>
-</g>
-<g class="col" style="animation-duration:8.29s;animation-delay:-0.06s" opacity="0.80">
-<text x="690" y="0" font-size="16" fill="#00ff9c" opacity="0.07">=</text>
-<text x="690" y="20" font-size="16" fill="#00ff9c" opacity="0.13">オ</text>
-<text x="690" y="40" font-size="16" fill="#00ff9c" opacity="0.20">ア</text>
-<text x="690" y="60" font-size="16" fill="#00ff9c" opacity="0.27">ソ</text>
-<text x="690" y="80" font-size="16" fill="#00ff9c" opacity="0.33">/</text>
-<text x="690" y="100" font-size="16" fill="#00ff9c" opacity="0.40">チ</text>
-<text x="690" y="120" font-size="16" fill="#00ff9c" opacity="0.47">0</text>
-<text x="690" y="140" font-size="16" fill="#00ff9c" opacity="0.53">セ</text>
-<text x="690" y="160" font-size="16" fill="#00ff9c" opacity="0.60">テ</text>
-<text x="690" y="180" font-size="16" fill="#00ff9c" opacity="0.67">ト</text>
-<text x="690" y="200" font-size="16" fill="#00ff9c" opacity="0.73">$</text>
-<text x="690" y="220" font-size="16" fill="#00ff9c" opacity="0.80">0</text>
-<text x="690" y="240" font-size="16" fill="#00ff9c" opacity="0.87">ス</text>
-<text x="690" y="260" font-size="16" fill="#00ff9c" opacity="0.93">[</text>
-<text x="690" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">ク</text>
-</g>
-<g class="col" style="animation-duration:4.16s;animation-delay:-1.07s" opacity="0.85">
-<text x="712" y="0" font-size="16" fill="#00ff9c" opacity="0.12">1</text>
-<text x="712" y="20" font-size="16" fill="#00ff9c" opacity="0.25">キ</text>
-<text x="712" y="40" font-size="16" fill="#00ff9c" opacity="0.38">ア</text>
-<text x="712" y="60" font-size="16" fill="#00ff9c" opacity="0.50">サ</text>
-<text x="712" y="80" font-size="16" fill="#00ff9c" opacity="0.62">ウ</text>
-<text x="712" y="100" font-size="16" fill="#00ff9c" opacity="0.75">セ</text>
-<text x="712" y="120" font-size="16" fill="#00ff9c" opacity="0.88">カ</text>
-<text x="712" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">エ</text>
-</g>
-<g class="col" style="animation-duration:6.86s;animation-delay:-1.33s" opacity="0.76">
-<text x="734" y="0" font-size="16" fill="#00ff9c" opacity="0.08">テ</text>
-<text x="734" y="20" font-size="16" fill="#00ff9c" opacity="0.17">ソ</text>
-<text x="734" y="40" font-size="16" fill="#00ff9c" opacity="0.25">ソ</text>
-<text x="734" y="60" font-size="16" fill="#00ff9c" opacity="0.33">{</text>
-<text x="734" y="80" font-size="16" fill="#00ff9c" opacity="0.42">$</text>
-<text x="734" y="100" font-size="16" fill="#00ff9c" opacity="0.50">]</text>
-<text x="734" y="120" font-size="16" fill="#00ff9c" opacity="0.58">オ</text>
-<text x="734" y="140" font-size="16" fill="#00ff9c" opacity="0.67">イ</text>
-<text x="734" y="160" font-size="16" fill="#00ff9c" opacity="0.75">シ</text>
-<text x="734" y="180" font-size="16" fill="#00ff9c" opacity="0.83">ケ</text>
-<text x="734" y="200" font-size="16" fill="#00ff9c" opacity="0.92">0</text>
-<text x="734" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">チ</text>
-</g>
-<g class="col" style="animation-duration:4.03s;animation-delay:-4.91s" opacity="0.57">
-<text x="756" y="0" font-size="16" fill="#00ff9c" opacity="0.12">ナ</text>
-<text x="756" y="20" font-size="16" fill="#00ff9c" opacity="0.25">ケ</text>
-<text x="756" y="40" font-size="16" fill="#00ff9c" opacity="0.38">ス</text>
-<text x="756" y="60" font-size="16" fill="#00ff9c" opacity="0.50">カ</text>
-<text x="756" y="80" font-size="16" fill="#00ff9c" opacity="0.62">オ</text>
-<text x="756" y="100" font-size="16" fill="#00ff9c" opacity="0.75">オ</text>
-<text x="756" y="120" font-size="16" fill="#00ff9c" opacity="0.88">エ</text>
-<text x="756" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">1</text>
-</g>
-<g class="col" style="animation-duration:5.24s;animation-delay:-2.63s" opacity="0.84">
-<text x="778" y="0" font-size="16" fill="#00ff9c" opacity="0.08">}</text>
-<text x="778" y="20" font-size="16" fill="#00ff9c" opacity="0.15">キ</text>
-<text x="778" y="40" font-size="16" fill="#00ff9c" opacity="0.23">ア</text>
-<text x="778" y="60" font-size="16" fill="#00ff9c" opacity="0.31">ク</text>
-<text x="778" y="80" font-size="16" fill="#00ff9c" opacity="0.38">テ</text>
-<text x="778" y="100" font-size="16" fill="#00ff9c" opacity="0.46">=</text>
-<text x="778" y="120" font-size="16" fill="#00ff9c" opacity="0.54">キ</text>
-<text x="778" y="140" font-size="16" fill="#00ff9c" opacity="0.62">セ</text>
-<text x="778" y="160" font-size="16" fill="#00ff9c" opacity="0.69">タ</text>
-<text x="778" y="180" font-size="16" fill="#00ff9c" opacity="0.77">ク</text>
-<text x="778" y="200" font-size="16" fill="#00ff9c" opacity="0.85">ナ</text>
-<text x="778" y="220" font-size="16" fill="#00ff9c" opacity="0.92">テ</text>
-<text x="778" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">オ</text>
-</g>
-<g class="col" style="animation-duration:9.77s;animation-delay:-1.02s" opacity="0.50">
-<text x="800" y="0" font-size="16" fill="#00ff9c" opacity="0.10">ツ</text>
-<text x="800" y="20" font-size="16" fill="#00ff9c" opacity="0.20">タ</text>
-<text x="800" y="40" font-size="16" fill="#00ff9c" opacity="0.30">オ</text>
-<text x="800" y="60" font-size="16" fill="#00ff9c" opacity="0.40">}</text>
-<text x="800" y="80" font-size="16" fill="#00ff9c" opacity="0.50">0</text>
-<text x="800" y="100" font-size="16" fill="#00ff9c" opacity="0.60">ス</text>
-<text x="800" y="120" font-size="16" fill="#00ff9c" opacity="0.70">;</text>
-<text x="800" y="140" font-size="16" fill="#00ff9c" opacity="0.80">ソ</text>
-<text x="800" y="160" font-size="16" fill="#00ff9c" opacity="0.90">セ</text>
-<text x="800" y="180" font-size="16" fill="#d9ffe9" opacity="1.00">]</text>
-</g>
-<g class="col" style="animation-duration:8.01s;animation-delay:-6.52s" opacity="0.82">
-<text x="822" y="0" font-size="16" fill="#00ff9c" opacity="0.09">カ</text>
-<text x="822" y="20" font-size="16" fill="#00ff9c" opacity="0.18">テ</text>
-<text x="822" y="40" font-size="16" fill="#00ff9c" opacity="0.27">]</text>
-<text x="822" y="60" font-size="16" fill="#00ff9c" opacity="0.36">ケ</text>
-<text x="822" y="80" font-size="16" fill="#00ff9c" opacity="0.45">$</text>
-<text x="822" y="100" font-size="16" fill="#00ff9c" opacity="0.55">]</text>
-<text x="822" y="120" font-size="16" fill="#00ff9c" opacity="0.64">テ</text>
-<text x="822" y="140" font-size="16" fill="#00ff9c" opacity="0.73">#</text>
-<text x="822" y="160" font-size="16" fill="#00ff9c" opacity="0.82">ソ</text>
-<text x="822" y="180" font-size="16" fill="#00ff9c" opacity="0.91">シ</text>
-<text x="822" y="200" font-size="16" fill="#d9ffe9" opacity="1.00">ナ</text>
-</g>
-<g class="col" style="animation-duration:9.08s;animation-delay:-4.57s" opacity="0.38">
-<text x="844" y="0" font-size="16" fill="#00ff9c" opacity="0.11">1</text>
-<text x="844" y="20" font-size="16" fill="#00ff9c" opacity="0.22">ト</text>
-<text x="844" y="40" font-size="16" fill="#00ff9c" opacity="0.33">シ</text>
-<text x="844" y="60" font-size="16" fill="#00ff9c" opacity="0.44">カ</text>
-<text x="844" y="80" font-size="16" fill="#00ff9c" opacity="0.56">ソ</text>
-<text x="844" y="100" font-size="16" fill="#00ff9c" opacity="0.67">[</text>
-<text x="844" y="120" font-size="16" fill="#00ff9c" opacity="0.78">ウ</text>
-<text x="844" y="140" font-size="16" fill="#00ff9c" opacity="0.89">ナ</text>
-<text x="844" y="160" font-size="16" fill="#d9ffe9" opacity="1.00">ス</text>
-</g>
-<g class="col" style="animation-duration:8.45s;animation-delay:-9.40s" opacity="0.59">
-<text x="866" y="0" font-size="16" fill="#00ff9c" opacity="0.08">;</text>
-<text x="866" y="20" font-size="16" fill="#00ff9c" opacity="0.17">キ</text>
-<text x="866" y="40" font-size="16" fill="#00ff9c" opacity="0.25">$</text>
-<text x="866" y="60" font-size="16" fill="#00ff9c" opacity="0.33">ナ</text>
-<text x="866" y="80" font-size="16" fill="#00ff9c" opacity="0.42">チ</text>
-<text x="866" y="100" font-size="16" fill="#00ff9c" opacity="0.50">ナ</text>
-<text x="866" y="120" font-size="16" fill="#00ff9c" opacity="0.58">}</text>
-<text x="866" y="140" font-size="16" fill="#00ff9c" opacity="0.67">コ</text>
-<text x="866" y="160" font-size="16" fill="#00ff9c" opacity="0.75">タ</text>
-<text x="866" y="180" font-size="16" fill="#00ff9c" opacity="0.83">ツ</text>
-<text x="866" y="200" font-size="16" fill="#00ff9c" opacity="0.92">#</text>
-<text x="866" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">エ</text>
-</g>
-<g class="col" style="animation-duration:4.92s;animation-delay:-3.03s" opacity="0.50">
-<text x="888" y="0" font-size="16" fill="#00ff9c" opacity="0.08">キ</text>
-<text x="888" y="20" font-size="16" fill="#00ff9c" opacity="0.15">0</text>
-<text x="888" y="40" font-size="16" fill="#00ff9c" opacity="0.23">ウ</text>
-<text x="888" y="60" font-size="16" fill="#00ff9c" opacity="0.31">オ</text>
-<text x="888" y="80" font-size="16" fill="#00ff9c" opacity="0.38">コ</text>
-<text x="888" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ナ</text>
-<text x="888" y="120" font-size="16" fill="#00ff9c" opacity="0.54">[</text>
-<text x="888" y="140" font-size="16" fill="#00ff9c" opacity="0.62">ケ</text>
-<text x="888" y="160" font-size="16" fill="#00ff9c" opacity="0.69">サ</text>
-<text x="888" y="180" font-size="16" fill="#00ff9c" opacity="0.77">エ</text>
-<text x="888" y="200" font-size="16" fill="#00ff9c" opacity="0.85">カ</text>
-<text x="888" y="220" font-size="16" fill="#00ff9c" opacity="0.92">]</text>
-<text x="888" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">$</text>
-</g>
-<g class="col" style="animation-duration:7.34s;animation-delay:-4.84s" opacity="0.84">
-<text x="910" y="0" font-size="16" fill="#00ff9c" opacity="0.07">#</text>
-<text x="910" y="20" font-size="16" fill="#00ff9c" opacity="0.13">0</text>
-<text x="910" y="40" font-size="16" fill="#00ff9c" opacity="0.20">;</text>
-<text x="910" y="60" font-size="16" fill="#00ff9c" opacity="0.27">;</text>
-<text x="910" y="80" font-size="16" fill="#00ff9c" opacity="0.33">]</text>
-<text x="910" y="100" font-size="16" fill="#00ff9c" opacity="0.40">{</text>
-<text x="910" y="120" font-size="16" fill="#00ff9c" opacity="0.47">ア</text>
-<text x="910" y="140" font-size="16" fill="#00ff9c" opacity="0.53">$</text>
-<text x="910" y="160" font-size="16" fill="#00ff9c" opacity="0.60">ア</text>
-<text x="910" y="180" font-size="16" fill="#00ff9c" opacity="0.67">キ</text>
-<text x="910" y="200" font-size="16" fill="#00ff9c" opacity="0.73">{</text>
-<text x="910" y="220" font-size="16" fill="#00ff9c" opacity="0.80">シ</text>
-<text x="910" y="240" font-size="16" fill="#00ff9c" opacity="0.87">ト</text>
-<text x="910" y="260" font-size="16" fill="#00ff9c" opacity="0.93">ソ</text>
-<text x="910" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">チ</text>
-</g>
-<g class="col" style="animation-duration:8.97s;animation-delay:-4.04s" opacity="0.58">
-<text x="932" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ナ</text>
-<text x="932" y="20" font-size="16" fill="#00ff9c" opacity="0.15">カ</text>
-<text x="932" y="40" font-size="16" fill="#00ff9c" opacity="0.23">テ</text>
-<text x="932" y="60" font-size="16" fill="#00ff9c" opacity="0.31">エ</text>
-<text x="932" y="80" font-size="16" fill="#00ff9c" opacity="0.38">[</text>
-<text x="932" y="100" font-size="16" fill="#00ff9c" opacity="0.46">イ</text>
-<text x="932" y="120" font-size="16" fill="#00ff9c" opacity="0.54">オ</text>
-<text x="932" y="140" font-size="16" fill="#00ff9c" opacity="0.62">サ</text>
-<text x="932" y="160" font-size="16" fill="#00ff9c" opacity="0.69">}</text>
-<text x="932" y="180" font-size="16" fill="#00ff9c" opacity="0.77">シ</text>
-<text x="932" y="200" font-size="16" fill="#00ff9c" opacity="0.85">コ</text>
-<text x="932" y="220" font-size="16" fill="#00ff9c" opacity="0.92">ア</text>
-<text x="932" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">0</text>
-</g>
-<g class="col" style="animation-duration:9.23s;animation-delay:-1.39s" opacity="0.45">
-<text x="954" y="0" font-size="16" fill="#00ff9c" opacity="0.08">コ</text>
-<text x="954" y="20" font-size="16" fill="#00ff9c" opacity="0.15">テ</text>
-<text x="954" y="40" font-size="16" fill="#00ff9c" opacity="0.23">イ</text>
-<text x="954" y="60" font-size="16" fill="#00ff9c" opacity="0.31">ア</text>
-<text x="954" y="80" font-size="16" fill="#00ff9c" opacity="0.38">[</text>
-<text x="954" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ウ</text>
-<text x="954" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ク</text>
-<text x="954" y="140" font-size="16" fill="#00ff9c" opacity="0.62">オ</text>
-<text x="954" y="160" font-size="16" fill="#00ff9c" opacity="0.69">シ</text>
-<text x="954" y="180" font-size="16" fill="#00ff9c" opacity="0.77">/</text>
-<text x="954" y="200" font-size="16" fill="#00ff9c" opacity="0.85">カ</text>
-<text x="954" y="220" font-size="16" fill="#00ff9c" opacity="0.92">カ</text>
-<text x="954" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">1</text>
-</g>
-<g class="col" style="animation-duration:8.32s;animation-delay:-2.42s" opacity="0.73">
-<text x="976" y="0" font-size="16" fill="#00ff9c" opacity="0.08">{</text>
-<text x="976" y="20" font-size="16" fill="#00ff9c" opacity="0.17">チ</text>
-<text x="976" y="40" font-size="16" fill="#00ff9c" opacity="0.25">ソ</text>
-<text x="976" y="60" font-size="16" fill="#00ff9c" opacity="0.33">0</text>
-<text x="976" y="80" font-size="16" fill="#00ff9c" opacity="0.42">エ</text>
-<text x="976" y="100" font-size="16" fill="#00ff9c" opacity="0.50">ツ</text>
-<text x="976" y="120" font-size="16" fill="#00ff9c" opacity="0.58">イ</text>
-<text x="976" y="140" font-size="16" fill="#00ff9c" opacity="0.67">=</text>
-<text x="976" y="160" font-size="16" fill="#00ff9c" opacity="0.75">ク</text>
-<text x="976" y="180" font-size="16" fill="#00ff9c" opacity="0.83">ケ</text>
-<text x="976" y="200" font-size="16" fill="#00ff9c" opacity="0.92">}</text>
-<text x="976" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">タ</text>
-</g>
-<g class="col" style="animation-duration:5.75s;animation-delay:-0.61s" opacity="0.88">
-<text x="998" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ク</text>
-<text x="998" y="20" font-size="16" fill="#00ff9c" opacity="0.15">セ</text>
-<text x="998" y="40" font-size="16" fill="#00ff9c" opacity="0.23">}</text>
-<text x="998" y="60" font-size="16" fill="#00ff9c" opacity="0.31">チ</text>
-<text x="998" y="80" font-size="16" fill="#00ff9c" opacity="0.38">ソ</text>
-<text x="998" y="100" font-size="16" fill="#00ff9c" opacity="0.46">ケ</text>
-<text x="998" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ク</text>
-<text x="998" y="140" font-size="16" fill="#00ff9c" opacity="0.62">#</text>
-<text x="998" y="160" font-size="16" fill="#00ff9c" opacity="0.69">エ</text>
-<text x="998" y="180" font-size="16" fill="#00ff9c" opacity="0.77">#</text>
-<text x="998" y="200" font-size="16" fill="#00ff9c" opacity="0.85">ス</text>
-<text x="998" y="220" font-size="16" fill="#00ff9c" opacity="0.92">[</text>
-<text x="998" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">ソ</text>
-</g>
-<g class="col" style="animation-duration:8.75s;animation-delay:-4.60s" opacity="0.31">
-<text x="1020" y="0" font-size="16" fill="#00ff9c" opacity="0.12">ス</text>
-<text x="1020" y="20" font-size="16" fill="#00ff9c" opacity="0.25">ソ</text>
-<text x="1020" y="40" font-size="16" fill="#00ff9c" opacity="0.38">$</text>
-<text x="1020" y="60" font-size="16" fill="#00ff9c" opacity="0.50">サ</text>
-<text x="1020" y="80" font-size="16" fill="#00ff9c" opacity="0.62">エ</text>
-<text x="1020" y="100" font-size="16" fill="#00ff9c" opacity="0.75">{</text>
-<text x="1020" y="120" font-size="16" fill="#00ff9c" opacity="0.88">ク</text>
-<text x="1020" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">#</text>
-</g>
-<g class="col" style="animation-duration:9.20s;animation-delay:-3.72s" opacity="0.55">
-<text x="1042" y="0" font-size="16" fill="#00ff9c" opacity="0.08">テ</text>
-<text x="1042" y="20" font-size="16" fill="#00ff9c" opacity="0.15">タ</text>
-<text x="1042" y="40" font-size="16" fill="#00ff9c" opacity="0.23">オ</text>
-<text x="1042" y="60" font-size="16" fill="#00ff9c" opacity="0.31">#</text>
-<text x="1042" y="80" font-size="16" fill="#00ff9c" opacity="0.38">タ</text>
-<text x="1042" y="100" font-size="16" fill="#00ff9c" opacity="0.46">オ</text>
-<text x="1042" y="120" font-size="16" fill="#00ff9c" opacity="0.54">キ</text>
-<text x="1042" y="140" font-size="16" fill="#00ff9c" opacity="0.62">ト</text>
-<text x="1042" y="160" font-size="16" fill="#00ff9c" opacity="0.69">}</text>
-<text x="1042" y="180" font-size="16" fill="#00ff9c" opacity="0.77">イ</text>
-<text x="1042" y="200" font-size="16" fill="#00ff9c" opacity="0.85">;</text>
-<text x="1042" y="220" font-size="16" fill="#00ff9c" opacity="0.92">[</text>
-<text x="1042" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">ソ</text>
-</g>
-<g class="col" style="animation-duration:7.39s;animation-delay:-6.41s" opacity="0.87">
-<text x="1064" y="0" font-size="16" fill="#00ff9c" opacity="0.08">コ</text>
-<text x="1064" y="20" font-size="16" fill="#00ff9c" opacity="0.15">ケ</text>
-<text x="1064" y="40" font-size="16" fill="#00ff9c" opacity="0.23">ス</text>
-<text x="1064" y="60" font-size="16" fill="#00ff9c" opacity="0.31">ソ</text>
-<text x="1064" y="80" font-size="16" fill="#00ff9c" opacity="0.38">1</text>
-<text x="1064" y="100" font-size="16" fill="#00ff9c" opacity="0.46">$</text>
-<text x="1064" y="120" font-size="16" fill="#00ff9c" opacity="0.54">ク</text>
-<text x="1064" y="140" font-size="16" fill="#00ff9c" opacity="0.62">サ</text>
-<text x="1064" y="160" font-size="16" fill="#00ff9c" opacity="0.69">オ</text>
-<text x="1064" y="180" font-size="16" fill="#00ff9c" opacity="0.77">{</text>
-<text x="1064" y="200" font-size="16" fill="#00ff9c" opacity="0.85">カ</text>
-<text x="1064" y="220" font-size="16" fill="#00ff9c" opacity="0.92">}</text>
-<text x="1064" y="240" font-size="16" fill="#d9ffe9" opacity="1.00">セ</text>
-</g>
-<g class="col" style="animation-duration:9.49s;animation-delay:-8.92s" opacity="0.55">
-<text x="1086" y="0" font-size="16" fill="#00ff9c" opacity="0.10">ケ</text>
-<text x="1086" y="20" font-size="16" fill="#00ff9c" opacity="0.20">{</text>
-<text x="1086" y="40" font-size="16" fill="#00ff9c" opacity="0.30">オ</text>
-<text x="1086" y="60" font-size="16" fill="#00ff9c" opacity="0.40">ウ</text>
-<text x="1086" y="80" font-size="16" fill="#00ff9c" opacity="0.50">ト</text>
-<text x="1086" y="100" font-size="16" fill="#00ff9c" opacity="0.60">$</text>
-<text x="1086" y="120" font-size="16" fill="#00ff9c" opacity="0.70">ク</text>
-<text x="1086" y="140" font-size="16" fill="#00ff9c" opacity="0.80">イ</text>
-<text x="1086" y="160" font-size="16" fill="#00ff9c" opacity="0.90">ク</text>
-<text x="1086" y="180" font-size="16" fill="#d9ffe9" opacity="1.00">ク</text>
-</g>
-<g class="col" style="animation-duration:6.51s;animation-delay:-2.47s" opacity="0.27">
-<text x="1108" y="0" font-size="16" fill="#00ff9c" opacity="0.08">ケ</text>
-<text x="1108" y="20" font-size="16" fill="#00ff9c" opacity="0.17">オ</text>
-<text x="1108" y="40" font-size="16" fill="#00ff9c" opacity="0.25">$</text>
-<text x="1108" y="60" font-size="16" fill="#00ff9c" opacity="0.33">イ</text>
-<text x="1108" y="80" font-size="16" fill="#00ff9c" opacity="0.42">チ</text>
-<text x="1108" y="100" font-size="16" fill="#00ff9c" opacity="0.50">サ</text>
-<text x="1108" y="120" font-size="16" fill="#00ff9c" opacity="0.58">ソ</text>
-<text x="1108" y="140" font-size="16" fill="#00ff9c" opacity="0.67">オ</text>
-<text x="1108" y="160" font-size="16" fill="#00ff9c" opacity="0.75">]</text>
-<text x="1108" y="180" font-size="16" fill="#00ff9c" opacity="0.83">チ</text>
-<text x="1108" y="200" font-size="16" fill="#00ff9c" opacity="0.92">=</text>
-<text x="1108" y="220" font-size="16" fill="#d9ffe9" opacity="1.00">キ</text>
-</g>
-<g class="col" style="animation-duration:4.01s;animation-delay:-8.32s" opacity="0.59">
-<text x="1130" y="0" font-size="16" fill="#00ff9c" opacity="0.07">/</text>
-<text x="1130" y="20" font-size="16" fill="#00ff9c" opacity="0.13">シ</text>
-<text x="1130" y="40" font-size="16" fill="#00ff9c" opacity="0.20">キ</text>
-<text x="1130" y="60" font-size="16" fill="#00ff9c" opacity="0.27">ス</text>
-<text x="1130" y="80" font-size="16" fill="#00ff9c" opacity="0.33">エ</text>
-<text x="1130" y="100" font-size="16" fill="#00ff9c" opacity="0.40">タ</text>
-<text x="1130" y="120" font-size="16" fill="#00ff9c" opacity="0.47">キ</text>
-<text x="1130" y="140" font-size="16" fill="#00ff9c" opacity="0.53">サ</text>
-<text x="1130" y="160" font-size="16" fill="#00ff9c" opacity="0.60">]</text>
-<text x="1130" y="180" font-size="16" fill="#00ff9c" opacity="0.67">ナ</text>
-<text x="1130" y="200" font-size="16" fill="#00ff9c" opacity="0.73">#</text>
-<text x="1130" y="220" font-size="16" fill="#00ff9c" opacity="0.80">]</text>
-<text x="1130" y="240" font-size="16" fill="#00ff9c" opacity="0.87">タ</text>
-<text x="1130" y="260" font-size="16" fill="#00ff9c" opacity="0.93">{</text>
-<text x="1130" y="280" font-size="16" fill="#d9ffe9" opacity="1.00">{</text>
-</g>
-<g class="col" style="animation-duration:6.14s;animation-delay:-9.32s" opacity="0.88">
-<text x="1152" y="0" font-size="16" fill="#00ff9c" opacity="0.12">ナ</text>
-<text x="1152" y="20" font-size="16" fill="#00ff9c" opacity="0.25">}</text>
-<text x="1152" y="40" font-size="16" fill="#00ff9c" opacity="0.38">オ</text>
-<text x="1152" y="60" font-size="16" fill="#00ff9c" opacity="0.50">1</text>
-<text x="1152" y="80" font-size="16" fill="#00ff9c" opacity="0.62">キ</text>
-<text x="1152" y="100" font-size="16" fill="#00ff9c" opacity="0.75">エ</text>
-<text x="1152" y="120" font-size="16" fill="#00ff9c" opacity="0.88">ケ</text>
-<text x="1152" y="140" font-size="16" fill="#d9ffe9" opacity="1.00">ソ</text>
-</g>
-<g class="col" style="animation-duration:8.90s;animation-delay:-0.30s" opacity="0.31">
-<text x="1174" y="0" font-size="16" fill="#00ff9c" opacity="0.06">1</text>
-<text x="1174" y="20" font-size="16" fill="#00ff9c" opacity="0.12">セ</text>
-<text x="1174" y="40" font-size="16" fill="#00ff9c" opacity="0.19">オ</text>
-<text x="1174" y="60" font-size="16" fill="#00ff9c" opacity="0.25">コ</text>
-<text x="1174" y="80" font-size="16" fill="#00ff9c" opacity="0.31">カ</text>
-<text x="1174" y="100" font-size="16" fill="#00ff9c" opacity="0.38">タ</text>
-<text x="1174" y="120" font-size="16" fill="#00ff9c" opacity="0.44">カ</text>
-<text x="1174" y="140" font-size="16" fill="#00ff9c" opacity="0.50">ス</text>
-<text x="1174" y="160" font-size="16" fill="#00ff9c" opacity="0.56">;</text>
-<text x="1174" y="180" font-size="16" fill="#00ff9c" opacity="0.62">1</text>
-<text x="1174" y="200" font-size="16" fill="#00ff9c" opacity="0.69">ア</text>
-<text x="1174" y="220" font-size="16" fill="#00ff9c" opacity="0.75">{</text>
-<text x="1174" y="240" font-size="16" fill="#00ff9c" opacity="0.81">セ</text>
-<text x="1174" y="260" font-size="16" fill="#00ff9c" opacity="0.88">テ</text>
-<text x="1174" y="280" font-size="16" fill="#00ff9c" opacity="0.94">テ</text>
-<text x="1174" y="300" font-size="16" fill="#d9ffe9" opacity="1.00">ナ</text>
-</g>
-<g class="col" style="animation-duration:9.22s;animation-delay:-6.63s" opacity="0.26">
-<text x="1196" y="0" font-size="16" fill="#00ff9c" opacity="0.09">コ</text>
-<text x="1196" y="20" font-size="16" fill="#00ff9c" opacity="0.18">/</text>
-<text x="1196" y="40" font-size="16" fill="#00ff9c" opacity="0.27">1</text>
-<text x="1196" y="60" font-size="16" fill="#00ff9c" opacity="0.36">]</text>
-<text x="1196" y="80" font-size="16" fill="#00ff9c" opacity="0.45">ア</text>
-<text x="1196" y="100" font-size="16" fill="#00ff9c" opacity="0.55">タ</text>
-<text x="1196" y="120" font-size="16" fill="#00ff9c" opacity="0.64">ア</text>
-<text x="1196" y="140" font-size="16" fill="#00ff9c" opacity="0.73">カ</text>
-<text x="1196" y="160" font-size="16" fill="#00ff9c" opacity="0.82">/</text>
-<text x="1196" y="180" font-size="16" fill="#00ff9c" opacity="0.91">チ</text>
-<text x="1196" y="200" font-size="16" fill="#d9ffe9" opacity="1.00">ナ</text>
-</g>
-</g>
-<g class="flick"><rect x="250" y="60" width="700" height="200" rx="10" fill="#03110b" fill-opacity="0.88" stroke="#00ff9c" stroke-opacity="0.5"/>
-<rect x="250" y="60" width="700" height="28" rx="10" fill="#062417"/><rect x="250" y="78" width="700" height="10" fill="#062417"/>
-<circle cx="270" cy="74" r="6" fill="#ff5f56"/>
-<circle cx="290" cy="74" r="6" fill="#ffbd2e"/>
-<circle cx="310" cy="74" r="6" fill="#27c93f"/>
-<text x="600.0" y="79" font-size="13" fill="#6ee7b7" text-anchor="middle">aeke@github: ~</text>
-<clipPath id="c1"><rect x="274" y="102" height="26" width="0"><animate attributeName="width" from="0" to="92" begin="0.40s" dur="0.36s" fill="freeze" calcMode="linear"/></rect></clipPath>
-<text x="274" y="120" font-size="18" clip-path="url(#c1)" filter="url(#glow)"><tspan fill="#9ca3af">$ </tspan><tspan fill="#00ff9c">whoami</tspan></text>
-<clipPath id="c2"><rect x="274" y="124" height="34" width="0"><animate attributeName="width" from="0" to="194" begin="1.11s" dur="0.54s" fill="freeze" calcMode="linear"/></rect></clipPath>
-<text x="274" y="150" font-size="26" font-weight="700" clip-path="url(#c2)" filter="url(#glow)"><tspan fill="#ffffff">Abdullah EKE</tspan></text>
-<clipPath id="c3"><rect x="274" y="168" height="26" width="0"><animate attributeName="width" from="0" to="158" begin="2.00s" dur="0.63s" fill="freeze" calcMode="linear"/></rect></clipPath>
-<text x="274" y="186" font-size="18" clip-path="url(#c3)" filter="url(#glow)"><tspan fill="#9ca3af">$ </tspan><tspan fill="#00ff9c">cat role.txt</tspan></text>
-<clipPath id="c4"><rect x="274" y="198" height="26" width="0"><animate attributeName="width" from="0" to="444" begin="2.98s" dur="1.80s" fill="freeze" calcMode="linear"/></rect></clipPath>
-<text x="274" y="216" font-size="18" clip-path="url(#c4)" filter="url(#glow)"><tspan fill="#00ff9c">Senior Full-Stack Developer // 13+ years</tspan></text>
-<clipPath id="c5"><rect x="274" y="228" height="26" width="0"><animate attributeName="width" from="0" to="345" begin="5.13s" dur="1.40s" fill="freeze" calcMode="linear"/></rect></clipPath>
-<text x="274" y="246" font-size="18" clip-path="url(#c5)" filter="url(#glow)"><tspan fill="#9ca3af">$ </tspan><tspan fill="#00ff9c">./build --scalable --reliable</tspan></text>
-<rect class="cur" x="621" y="230" width="11" height="20" fill="#00ff9c" opacity="0"><set attributeName="opacity" to="1" begin="6.88s"/></rect>
-</g>
-<rect width="1200" height="320" fill="url(#scan)"/><rect width="1200" height="320" fill="url(#vig)"/>
+<style>.trace{animation:run 5s linear infinite}@keyframes run{from{stroke-dashoffset:418}to{stroke-dashoffset:0}}
+.g1,.g2{opacity:0;animation:gl 4s steps(1) infinite}.g2{animation-delay:.05s}@keyframes gl{0%,88%,100%{opacity:0;transform:none}89%{opacity:.8;transform:translate(-4px,1px)}91%{opacity:.8;transform:translate(3px,-2px)}93%{opacity:0}95%{opacity:.7;transform:translate(-2px,0)}96%{opacity:0}}
+.sig{animation:sig 2s linear infinite}@keyframes sig{from{stroke-dashoffset:126}to{stroke-dashoffset:0}}
+.pulse{animation:pl 2.5s ease-in-out infinite}@keyframes pl{0%,100%{opacity:.25}50%{opacity:1}}
+.live{animation:pl 1.6s ease-in-out infinite}
+@keyframes a1{0%,3.12%{opacity:0}3.52%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a2{0%,4.12%{opacity:0}4.53%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a3{0%,5.12%{opacity:0}5.53%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a4{0%,7.69%{opacity:0}8.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a5{0%,8.69%{opacity:0}9.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a6{0%,9.69%{opacity:0}10.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a7{0%,10.69%{opacity:0}11.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a8{0%,11.69%{opacity:0}12.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a9{0%,12.69%{opacity:0}13.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a10{0%,13.69%{opacity:0}14.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a11{0%,14.69%{opacity:0}15.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a12{0%,15.69%{opacity:0}16.09%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a13{0%,23.88%{opacity:0}24.27%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a14{0%,24.56%{opacity:0}24.96%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a15{0%,25.25%{opacity:0}25.65%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a16{0%,25.94%{opacity:0}26.34%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a17{0%,26.63%{opacity:0}27.03%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a18{0%,28.88%{opacity:0}29.28%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a19{0%,29.56%{opacity:0}29.96%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a20{0%,30.25%{opacity:0}30.65%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a21{0%,30.94%{opacity:0}31.34%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a22{0%,31.63%{opacity:0}32.03%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a23{0%,32.31%{opacity:0}32.71%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a24{0%,34.56%{opacity:0}34.96%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a25{0%,35.25%{opacity:0}35.65%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a26{0%,35.94%{opacity:0}36.34%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a27{0%,36.63%{opacity:0}37.03%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a28{0%,37.31%{opacity:0}37.71%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a29{0%,38.00%{opacity:0}38.40%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a30{0%,40.25%{opacity:0}40.65%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a31{0%,40.94%{opacity:0}41.34%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a32{0%,41.63%{opacity:0}42.03%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a33{0%,42.31%{opacity:0}42.71%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a34{0%,43.00%{opacity:0}43.40%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a35{0%,45.25%{opacity:0}45.65%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a36{0%,47.50%{opacity:0}47.90%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a37{0%,48.19%{opacity:0}48.59%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a38{0%,48.88%{opacity:0}49.28%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a39{0%,48.88%{transform:scaleX(0);opacity:1}57.63%,83.75%{transform:scaleX(1);opacity:1}88.75%,100%{transform:scaleX(1);opacity:0}}
+@keyframes a40{0%,60.44%{opacity:0}60.84%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a41{0%,61.13%{opacity:0}61.53%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a42{0%,61.81%{opacity:0}62.21%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a43{0%,62.50%{opacity:0}62.90%,83.75%{opacity:1}88.75%,100%{opacity:0}}
+@keyframes a44{0%,8.75%{transform:translateY(0);opacity:0}9.38%{opacity:1}18.75%{transform:translateY(220px);opacity:1}19.38%,100%{opacity:0;transform:translateY(220px)}}
+.cur{animation:bk 1s steps(1) infinite}@keyframes bk{50%{opacity:0}}</style>
+<rect width="1200" height="340" fill="url(#bg)"/><rect width="1200" height="340" fill="url(#dots)"/>
+<path d="M0 300 H140 L170 270 H330" stroke="#1e293b" stroke-width="1.5" fill="none"/>
+<path d="M0 300 H140 L170 270 H330" stroke="#22d3ee" stroke-width="2" fill="none" stroke-dasharray="18 400" class="trace" style="animation-delay:-0.0s" filter="url(#glow)"/>
+<path d="M0 60 H90 L120 30 H260" stroke="#1e293b" stroke-width="1.5" fill="none"/>
+<path d="M0 60 H90 L120 30 H260" stroke="#22d3ee" stroke-width="2" fill="none" stroke-dasharray="18 400" class="trace" style="animation-delay:-1.7s" filter="url(#glow)"/>
+<path d="M330 270 H420 L450 300 H560" stroke="#1e293b" stroke-width="1.5" fill="none"/>
+<path d="M330 270 H420 L450 300 H560" stroke="#22d3ee" stroke-width="2" fill="none" stroke-dasharray="18 400" class="trace" style="animation-delay:-3.4s" filter="url(#glow)"/>
+<g font-size="54" font-weight="800" font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif">
+<text x="54" y="140" fill="#22d3ee" opacity=".75" class="g1">Abdullah EKE</text>
+<text x="58" y="140" fill="#f472b6" opacity=".75" class="g2">Abdullah EKE</text>
+<text x="56" y="140" fill="#f8fafc">Abdullah EKE</text></g>
+<text x="56" y="178" font-size="21" fill="url(#ink)" font-weight="600" font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif">Senior Full-Stack Developer</text>
+<text x="56" y="204" font-size="14" fill="#94a3b8">18+ years · shipping software with humans + agents</text>
+<rect x="56" y="226" width="82" height="26" rx="13" fill="#0f172a" stroke="#334155"/><text x="97" y="243.5" font-size="13" fill="#cbd5e1" text-anchor="middle">backend</text>
+<rect x="146.2" y="226" width="56" height="26" rx="13" fill="#0f172a" stroke="#334155"/><text x="174" y="243.5" font-size="13" fill="#cbd5e1" text-anchor="middle">apis</text>
+<rect x="210.6" y="226" width="74" height="26" rx="13" fill="#0f172a" stroke="#334155"/><text x="247" y="243.5" font-size="13" fill="#cbd5e1" text-anchor="middle">mobile</text>
+<rect x="292.2" y="226" width="99" height="26" rx="13" fill="#0f172a" stroke="#334155"/><text x="342" y="243.5" font-size="13" fill="#cbd5e1" text-anchor="middle">ai-agents</text>
+<line x1="520" y1="110" x2="575" y2="80" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="110" x2="575" y2="140" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="110" x2="575" y2="200" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="110" x2="575" y2="260" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="170" x2="575" y2="80" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="170" x2="575" y2="140" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="170" x2="575" y2="200" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="170" x2="575" y2="260" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="230" x2="575" y2="80" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="230" x2="575" y2="140" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="230" x2="575" y2="200" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="230" x2="575" y2="260" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="80" x2="630" y2="120" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="80" x2="630" y2="180" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="80" x2="630" y2="240" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="140" x2="630" y2="120" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="140" x2="630" y2="180" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="140" x2="630" y2="240" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="200" x2="630" y2="120" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="200" x2="630" y2="180" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="200" x2="630" y2="240" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="260" x2="630" y2="120" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="260" x2="630" y2="180" stroke="#312e81" stroke-width="1"/>
+<line x1="575" y1="260" x2="630" y2="240" stroke="#312e81" stroke-width="1"/>
+<line x1="630" y1="120" x2="660" y2="120" stroke="#312e81" stroke-width="1"/>
+<line x1="630" y1="180" x2="660" y2="180" stroke="#312e81" stroke-width="1"/>
+<line x1="630" y1="240" x2="660" y2="240" stroke="#312e81" stroke-width="1"/>
+<line x1="520" y1="110" x2="575" y2="80" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.31s;animation-delay:-1.68s"/>
+<line x1="520" y1="110" x2="575" y2="140" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.43s;animation-delay:-2.57s"/>
+<line x1="520" y1="110" x2="575" y2="200" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.42s;animation-delay:-1.84s"/>
+<line x1="520" y1="110" x2="575" y2="260" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.17s;animation-delay:-0.27s"/>
+<line x1="520" y1="170" x2="575" y2="140" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.74s;animation-delay:-1.19s"/>
+<line x1="520" y1="170" x2="575" y2="260" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.83s;animation-delay:-0.05s"/>
+<line x1="520" y1="230" x2="575" y2="80" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.92s;animation-delay:-2.64s"/>
+<line x1="520" y1="230" x2="575" y2="140" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.43s;animation-delay:-1.77s"/>
+<line x1="520" y1="230" x2="575" y2="260" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.75s;animation-delay:-1.99s"/>
+<line x1="575" y1="80" x2="630" y2="120" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.32s;animation-delay:-1.65s"/>
+<line x1="575" y1="80" x2="630" y2="240" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.55s;animation-delay:-0.69s"/>
+<line x1="575" y1="140" x2="630" y2="120" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.33s;animation-delay:-0.32s"/>
+<line x1="575" y1="140" x2="630" y2="180" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.22s;animation-delay:-2.87s"/>
+<line x1="575" y1="140" x2="630" y2="240" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.26s;animation-delay:-2.78s"/>
+<line x1="575" y1="200" x2="630" y2="180" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.96s;animation-delay:-0.22s"/>
+<line x1="575" y1="200" x2="630" y2="240" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.60s;animation-delay:-0.26s"/>
+<line x1="575" y1="260" x2="630" y2="180" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.32s;animation-delay:-0.74s"/>
+<line x1="575" y1="260" x2="630" y2="240" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.02s;animation-delay:-1.46s"/>
+<line x1="630" y1="120" x2="660" y2="120" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.08s;animation-delay:-0.57s"/>
+<line x1="630" y1="180" x2="660" y2="180" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:1.67s;animation-delay:-1.15s"/>
+<line x1="630" y1="240" x2="660" y2="240" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 120" class="sig" style="animation-duration:2.37s;animation-delay:-2.59s"/>
+<circle cx="520" cy="110" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="520" cy="110" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.76s" filter="url(#glow)"/>
+<circle cx="520" cy="170" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="520" cy="170" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-2.21s" filter="url(#glow)"/>
+<circle cx="520" cy="230" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="520" cy="230" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.53s" filter="url(#glow)"/>
+<circle cx="575" cy="80" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="575" cy="80" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.99s" filter="url(#glow)"/>
+<circle cx="575" cy="140" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="575" cy="140" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-2.14s" filter="url(#glow)"/>
+<circle cx="575" cy="200" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="575" cy="200" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-1.60s" filter="url(#glow)"/>
+<circle cx="575" cy="260" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="575" cy="260" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.25s" filter="url(#glow)"/>
+<circle cx="630" cy="120" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="630" cy="120" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-2.47s" filter="url(#glow)"/>
+<circle cx="630" cy="180" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="630" cy="180" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.53s" filter="url(#glow)"/>
+<circle cx="630" cy="240" r="5" fill="#0b1020" stroke="#a78bfa" stroke-width="1.5"/><circle cx="630" cy="240" r="2.6" fill="#22d3ee" class="pulse" style="animation-delay:-0.65s" filter="url(#glow)"/>
+<rect x="660" y="36" width="500" height="268" rx="12" fill="#0b1020" fill-opacity=".92" stroke="#334155"/>
+<path d="M660 66 H1160" stroke="#1e293b"/>
+<circle cx="678" cy="51" r="5" fill="#ff5f57"/>
+<circle cx="696" cy="51" r="5" fill="#febc2e"/>
+<circle cx="714" cy="51" r="5" fill="#28c840"/>
+<text x="910.0" y="56" font-size="12" fill="#64748b" text-anchor="middle">agent.session — aeke</text>
+<g class="live"><circle cx="1100" cy="51" r="4" fill="#28c840"/><text x="1110" y="55" font-size="11" fill="#28c840">live</text></g>
+<text x="680" y="94" font-size="11" fill="#334155"> 1</text>
+<text x="708" y="94" font-size="14" xml:space="preserve"><tspan fill="#f472b6" style="animation:a1 16.0s linear infinite">❯ </tspan><tspan fill="#64748b" style="animation:a2 16.0s linear infinite">prompt </tspan><tspan fill="#fbbf24" style="animation:a3 16.0s linear infinite">&quot;ship a fast, secure orders API&quot;</tspan></text>
+<text x="680" y="118" font-size="11" fill="#334155"> 2</text>
+<text x="708" y="118" font-size="14" xml:space="preserve"><tspan fill="#22d3ee" style="animation:a4 16.0s linear infinite">◆ </tspan><tspan fill="#22d3ee" style="animation:a5 16.0s linear infinite">agent </tspan><tspan fill="#64748b" style="animation:a6 16.0s linear infinite">planning </tspan><tspan fill="#64748b" style="animation:a7 16.0s linear infinite">→ </tspan><tspan fill="#e2e8f0" style="animation:a8 16.0s linear infinite">schema </tspan><tspan fill="#64748b" style="animation:a9 16.0s linear infinite">· </tspan><tspan fill="#e2e8f0" style="animation:a10 16.0s linear infinite">routes </tspan><tspan fill="#64748b" style="animation:a11 16.0s linear infinite">· </tspan><tspan fill="#e2e8f0" style="animation:a12 16.0s linear infinite">tests</tspan></text>
+<text x="680" y="142" font-size="11" fill="#334155"> 3</text>
+<text x="708" y="142" font-size="14" xml:space="preserve"><tspan fill="#c084fc" style="animation:a13 16.0s linear infinite">export </tspan><tspan fill="#c084fc" style="animation:a14 16.0s linear infinite">async </tspan><tspan fill="#c084fc" style="animation:a15 16.0s linear infinite">function </tspan><tspan fill="#22d3ee" style="animation:a16 16.0s linear infinite">createOrder</tspan><tspan fill="#e2e8f0" style="animation:a17 16.0s linear infinite">(req) {</tspan></text>
+<text x="680" y="166" font-size="11" fill="#334155"> 4</text>
+<text x="708" y="166" font-size="14" xml:space="preserve"><tspan fill="#c084fc" style="animation:a18 16.0s linear infinite">  const </tspan><tspan fill="#e2e8f0" style="animation:a19 16.0s linear infinite">order </tspan><tspan fill="#64748b" style="animation:a20 16.0s linear infinite">= </tspan><tspan fill="#c084fc" style="animation:a21 16.0s linear infinite">await </tspan><tspan fill="#22d3ee" style="animation:a22 16.0s linear infinite">validate</tspan><tspan fill="#e2e8f0" style="animation:a23 16.0s linear infinite">(req.body);</tspan></text>
+<text x="680" y="190" font-size="11" fill="#334155"> 5</text>
+<text x="708" y="190" font-size="14" xml:space="preserve"><tspan fill="#c084fc" style="animation:a24 16.0s linear infinite">  await </tspan><tspan fill="#e2e8f0" style="animation:a25 16.0s linear infinite">queue</tspan><tspan fill="#22d3ee" style="animation:a26 16.0s linear infinite">.publish</tspan><tspan fill="#e2e8f0" style="animation:a27 16.0s linear infinite">(</tspan><tspan fill="#fbbf24" style="animation:a28 16.0s linear infinite">&#x27;orders&#x27;</tspan><tspan fill="#e2e8f0" style="animation:a29 16.0s linear infinite">, order);</tspan></text>
+<text x="680" y="214" font-size="11" fill="#334155"> 6</text>
+<text x="708" y="214" font-size="14" xml:space="preserve"><tspan fill="#c084fc" style="animation:a30 16.0s linear infinite">  return </tspan><tspan fill="#e2e8f0" style="animation:a31 16.0s linear infinite">{ </tspan><tspan fill="#e2e8f0" style="animation:a32 16.0s linear infinite">ok: </tspan><tspan fill="#c084fc" style="animation:a33 16.0s linear infinite">true</tspan><tspan fill="#e2e8f0" style="animation:a34 16.0s linear infinite">, id: order.id };</tspan></text>
+<text x="680" y="238" font-size="11" fill="#334155"> 7</text>
+<text x="708" y="238" font-size="14" xml:space="preserve"><tspan fill="#e2e8f0" style="animation:a35 16.0s linear infinite">}</tspan></text>
+<text x="680" y="262" font-size="11" fill="#334155"> 8</text>
+<text x="708" y="262" font-size="14" xml:space="preserve"><tspan fill="#f472b6" style="animation:a36 16.0s linear infinite">$ </tspan><tspan fill="#e2e8f0" style="animation:a37 16.0s linear infinite">run tests </tspan></text>
+<rect x="820" y="251" width="200" height="10" rx="5" fill="#1e293b" style="animation:a38 16.0s linear infinite"/>
+<rect x="820" y="251" width="200" height="10" rx="5" fill="url(#ink)" style="transform-box:fill-box;transform-origin:left;animation:a39 16.0s linear infinite"/>
+<text x="680" y="286" font-size="11" fill="#334155"> 9</text>
+<text x="708" y="286" font-size="14" xml:space="preserve"><tspan fill="#4ade80" style="animation:a40 16.0s linear infinite">✓ </tspan><tspan fill="#4ade80" style="animation:a41 16.0s linear infinite">128 passed  </tspan><tspan fill="#fbbf24" style="animation:a42 16.0s linear infinite">⚡ </tspan><tspan fill="#e2e8f0" style="animation:a43 16.0s linear infinite">deployed in 3.2s</tspan></text>
+<rect x="660" y="68" width="500" height="26" fill="url(#beam)" clip-path="url(#ed)" style="animation:a44 16.0s linear infinite"/>
 </svg>

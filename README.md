@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/aeke">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=600&lines=13%2B+years+of+building+production+software;Backend+architecture+%26+scalable+APIs;Web+%26+cross-platform+mobile+apps;Open-source+%26+developer+tools;AI-assisted+development" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=620&lines=Designing+systems+that+scale;Shipping+APIs%2C+web+%26+mobile+end+to+end;Pairing+with+AI+agents+to+build+faster;Open-source+%26+developer+tools" alt="Typing SVG" />
   </a>
 </p>
 
@@ -13,21 +13,33 @@
   <a href="https://twitter.com/abdullaheke"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
   <a href="https://www.ekesolution.com"><img src="https://img.shields.io/badge/ekesolution.com-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
   <a href="mailto:abdheke@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://komarev.com/ghpvc/?username=aeke&style=for-the-badge&color=00c97a&label=Profile+views" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=aeke&style=for-the-badge&color=7c3aed&label=Profile+views" alt="Profile views"/>
 </p>
 
 ---
 
-### About
+### About me
 
-I design and ship software end to end — from backend architecture and APIs to web and mobile clients. I enjoy turning complex problems into simple, reliable products and sharing what I build with the open-source community.
+I'm a senior full-stack developer from Istanbul with **18+ years** of turning ideas into production software — from the database schema all the way to the app in someone's pocket.
 
-- Scalable backends, REST / GraphQL APIs and background workers
-- Cross-platform mobile apps
-- Developer tools and self-hosted software
-- AI-assisted development workflows
+I care about the parts users never see but always feel: clean architecture, fast and secure APIs, background jobs that don't fail at 3 a.m., and code the next developer can actually read. Lately my workflow is **AI-native** — I treat agents as teammates for planning, coding and testing, while keeping the engineering judgment human.
 
-📍 Istanbul, Türkiye
+<table>
+  <tr><td>📍 <b>Based in</b></td><td>Istanbul, Türkiye</td></tr>
+  <tr><td>🧭 <b>Experience</b></td><td>18+ years in professional software development</td></tr>
+  <tr><td>🎯 <b>Focus</b></td><td>Backend architecture · Scalable APIs · Web &amp; mobile · AI-assisted engineering</td></tr>
+  <tr><td>🛠️ <b>What I build</b></td><td>B2B &amp; public APIs · Workers &amp; queues · Admin dashboards · Cross-platform apps · Developer tools</td></tr>
+  <tr><td>🧩 <b>Principles</b></td><td>Simple over clever · Measure, then optimize · Ship, learn, iterate</td></tr>
+  <tr><td>🔭 <b>Currently</b></td><td>Exploring LLM agents and developer tooling</td></tr>
+</table>
+
+**What I bring to a team**
+
+- 🏗️ **Architecture** — designing services, data models and integrations that stay maintainable as they grow
+- ⚡ **Performance & reliability** — caching, queues, observability and zero-drama deployments
+- 📱 **Full product range** — backend, web frontend and mobile, so features ship end to end
+- 🤖 **AI-native workflow** — agent-driven development, code review and automation
+- 🤝 **Leadership** — mentoring developers, code reviews and turning requirements into a clear technical plan
 
 ---
 
@@ -53,6 +65,14 @@ I design and ship software end to end — from backend architecture and APIs to 
 ### GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=aeke&show_icons=true&hide_border=true&theme=transparent&include_all_commits=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aeke&layout=compact&hide_border=true&theme=transparent&langs_count=8" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=aeke&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0b1020&title_color=a78bfa&icon_color=22d3ee&text_color=cbd5e1&ring_color=a78bfa" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aeke&layout=compact&langs_count=8&hide_border=true&bg_color=0b1020&title_color=a78bfa&text_color=cbd5e1" alt="Top languages" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aeke/aeke/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aeke/aeke/output/github-snake.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/aeke/aeke/output/github-snake-dark.svg" width="100%" />
+  </picture>
 </p>
